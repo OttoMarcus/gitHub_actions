@@ -15,12 +15,12 @@ jobs:
         run: npm ci
       - name: Lint test
         run: npm run lint
-      - name: Buid project
+      - name: Build project
         run: npm run build
       - name: Save build artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: buid
+          name: build
           path: dist/
 
   deploy:
