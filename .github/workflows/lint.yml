@@ -15,9 +15,9 @@ jobs:
       - name: Install project dependencies
         run: npm ci
       - name: Lint project
-        run: npm run eslint .
+        run: npm run lint
       - name: Build project
-        run: npm run vite build
+        run: npm run build
       - name: Deploy
         run: |
           echo Deploying ...
